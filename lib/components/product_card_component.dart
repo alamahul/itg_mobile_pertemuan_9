@@ -1,19 +1,26 @@
 import 'package:flutter/material.dart';
-import 'package:itg_mobile_pertemuan_8/models/product.dart';
 
-class ProductComponent extends StatelessWidget {
+import '../models/product.dart';
+import '../pages/detail_page.dart';
+
+class ProductCardComponent extends StatelessWidget {
   final Product product;
-  const ProductComponent({super.key, required this.product});
+  const ProductCardComponent({super.key, required this.product});
 
   @override
   Widget build(BuildContext context) {
 
     return GestureDetector(
       onTap: () {
-
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => DetailPage(product: product),
+          ),
+        );
       },
       child: Card(
-        clipBehavior: .antiAlias,
+        clipBehavior: Clip.antiAlias,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
