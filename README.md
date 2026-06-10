@@ -54,7 +54,7 @@ A Flutter mobile application for browsing products, viewing detailed information
 2. Buka folder proyek:
 
 ```bash
-cd "e:/tugas-kuliah/Semester 6/Praktikum Pemograman Mobile/itg_mobile_pertemuan_9"
+cd "itg_mobile_pertemuan_9"
 ```
 
 3. Jalankan perintah:
